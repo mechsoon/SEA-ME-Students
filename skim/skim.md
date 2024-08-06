@@ -1,5 +1,5 @@
 # FirstName LastName (Unique ID)
-## Profile Pic:
+## Profile Pic: oh
 ## Call me by this name: Duke
 ## Cohort: July 2024
 ## Email ID: ksw5190@gmail.com
