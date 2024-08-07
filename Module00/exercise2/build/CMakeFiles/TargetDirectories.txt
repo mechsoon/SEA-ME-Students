@@ -1,0 +1,3 @@
+/home/soonwoong/Seame/SEA-ME-Students/Module00/exercise2/build/CMakeFiles/Phonebook.dir
+/home/soonwoong/Seame/SEA-ME-Students/Module00/exercise2/build/CMakeFiles/edit_cache.dir
+/home/soonwoong/Seame/SEA-ME-Students/Module00/exercise2/build/CMakeFiles/rebuild_cache.dir
