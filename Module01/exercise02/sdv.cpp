@@ -58,21 +58,37 @@ string Car::getCeo(){
 
 class Volkswagen:public Car{
     public:
+        Volkswagen();
+        Volkswagen(const Volkswagen& volkswagen);
+        Volkswagen& operator=(const Volkswagen& volkswagen);
         Volkswagen(std::string FamousModel,int price, std::string Ceo);
         void info() override;
+        ~Volkswagen();
 };
 
 // inheritance
+Volkswagen::Volkswagen():Car(){}
+Volkswagen::Volkswagen(const Volkswagen& volkswagen):Car(volkswagen){}
+Volkswagen& Volkswagen::operator=(const Volkswagen& volkswagen)
+{
+    if(this!=&volkswagen)
+    {
+        Car::operator=(volkswagen);
+    }
+    return *this;
+    }
 
 Volkswagen::Volkswagen(std::string FamousModel,int price, std::string Ceo):Car(FamousModel,price,Ceo){}
 void Volkswagen::info(){
     cout<<"VolkswagenFamousModel: "<<getFamousModel()<<" price: "<<getPrice()<<" Ceo: "<<getCeo()<<"\n";
 }
+Volkswagen::~Volkswagen(){}
 
 // inheritance
 
 class Audi:public Car{
     public:
+        
         Audi(std::string FamousModel,int price, std::string Ceo);
         void info() override;
 };
